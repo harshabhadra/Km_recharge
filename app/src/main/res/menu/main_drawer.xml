@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/main_group">
+
+        <item android:id="@+id/nav_recharge_report"
+            android:title="Recharge Report"
+            android:icon="@drawable/ic_recharge_report_24dp"/>
+        <item android:id="@+id/nav_my_purchase"
+            android:icon="@drawable/ic_account_balance_gray_24dp"
+            android:title="My Purchase"/>
+        <item android:id="@+id/nav_fund_request"
+            android:icon="@drawable/ic_fund_requesst_grey_24dp"
+            android:title="Fund Request"/>
+        <item android:title="My Commission"
+            android:id="@+id/nav_my_commission"
+            android:icon="@drawable/ic_attach_money_black_24dp"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/secondary_group">
+        <item android:id="@+id/nav_help"
+            android:title="Help"
+            android:icon="@drawable/ic_help_grey_24dp"/>
+        <item android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rate_us_grey_24dp"
+            android:title="Rate Us"/>
+        <item android:title="Share App"
+            android:icon="@drawable/ic_share_grey_24dp"
+            android:id="@+id/nav_share_app"/>
+        <item android:id="@+id/nav_log_out"
+            android:title="Log Out"
+            android:icon="@drawable/ic_logout_user"
+            />
+    </group>
+</menu>
