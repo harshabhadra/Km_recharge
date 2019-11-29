@@ -1,4 +1,4 @@
-package com.formaxit.kmrecharge;
+package com.formaxit.kmrecharge.Adapters;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.formaxit.kmrecharge.R;
 import com.smarteist.autoimageslider.SliderViewAdapter;
 
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderViewHolder> {

@@ -16,4 +16,5 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="marque_sample_text">Dear Customer, We are providing Mobile Prepaid, Postpaid and DTH Service right now. Other Services will be available soon.</string>
+    <string name="retailer_access">retailer_access</string>
 </resources>
