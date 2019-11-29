@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.RechargeActivity">
+
+        <ImageView
+            android:id="@+id/recharge_operator_logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/vodafone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recharge_operator_name"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vodafone"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/recharge_operator_logo"
+            app:layout_constraintStart_toStartOf="@+id/recharge_operator_logo"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_operator_logo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_recharge_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_operator_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recharge_number_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/profile_icon_back"
+            android:padding="8dp"
+            android:src="@drawable/ic_phone_iphone_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_recharge_number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout_recharge_number" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_recharge_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/special_offer_button"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayout_recharge_number"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_recharge_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/recharge_amount_input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_icon_back"
+            android:padding="8dp"
+            android:src="@drawable/ic_account_balance_wallet_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_recharge_amount"
+            app:layout_constraintEnd_toStartOf="@+id/textInputLayout_recharge_number"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout_recharge_amount" />
+
+        <Button
+            android:id="@+id/special_offer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button"
+            android:elevation="8dp"
+            android:padding="8dp"
+            android:text="Special Offer"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout_recharge_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textInputLayout_recharge_amount"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout_recharge_amount" />
+
+        <Button
+            android:id="@+id/recharge_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/recharge_button_back"
+            android:elevation="16dp"
+            android:textColor="@color/white"
+            android:text="Recharge"
+            app:layout_constraintEnd_toEndOf="@+id/special_offer_button"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout_recharge_amount" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
