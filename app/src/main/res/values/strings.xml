@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">KM RECHARGE</string>
+    <string name="auth_key">12345</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -17,4 +18,5 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="marque_sample_text">Dear Customer, We are providing Mobile Prepaid, Postpaid and DTH Service right now. Other Services will be available soon.</string>
     <string name="retailer_access">retailer_access</string>
+    <string name="tc_recharge"><![CDATA[T&C: Recharge Amount is non-refundable]]></string>
 </resources>

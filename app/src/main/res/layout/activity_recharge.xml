@@ -45,6 +45,7 @@
                 android:id="@+id/recharge_number_input_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="number"
                 android:hint="Mobile Number" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,6 +74,7 @@
                 android:id="@+id/recharge_amount_input_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="number"
                 android:hint="Amount" />
         </com.google.android.material.textfield.TextInputLayout>
 
